@@ -4,14 +4,6 @@ import static org.junit.Assert.*;
 
 public class L2021112970_Solution17_Test extends Solution {
 
-    /**
-     * 总体原则：等价类划分
-     * 等价类划分：
-     *  非自包含的字符串中重复串的查找（source1、source2、source3）
-     *  自包含的字符串中重复串的查找（source4）
-     *  长度小于10的字符串（source5）
-     *
-     */
     @Test
     public void findRepeatedDnaSequences() {
         String source1 = "AACCGGTTTTAACCGGTTTTAAGGCCTTAACCGG"; // AACCGGTTTT ACCGGTTTTA CCGGTTTTAA
