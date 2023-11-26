@@ -21,10 +21,12 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
       - name: Run tests with Maven
         run: mvn -B test --file pom.xml
+      - name: Fetch main branch
+        run: git fetch origin main
       - name: Merge Pull Request
         if: ${{ success() }}
         run:
-          git pull origin ${{ github.head_ref }}
+          git push origin --delete ${{ github.head_ref }}
           git checkout main
           git merge ${{ github.head_sha }}
           git push origin main
