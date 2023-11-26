@@ -4,6 +4,9 @@ import static org.junit.Assert.*;
 
 public class L2021112970_Solution17_Test extends Solution {
 
+    /**
+     * test
+     */
     @Test
     public void findRepeatedDnaSequences() {
         String source1 = "AACCGGTTTTAACCGGTTTTAAGGCCTTAACCGG"; // AACCGGTTTT ACCGGTTTTA CCGGTTTTAA
